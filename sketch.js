@@ -2,6 +2,7 @@
 
 function setup() {
   createCanvas(500, 400);
+  trilha.loop();
 }
 
 function draw() {
@@ -12,5 +13,7 @@ function draw() {
   movAtor(); 
   respawnCar();
   verCollide();
+  addPontos();
+  drawPontos();
 }
 

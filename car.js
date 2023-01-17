@@ -8,20 +8,20 @@ let compriCarro = 50;
 let alturaCarro = 40;
 
 function drawCar(){
-  for(let i = 0; i < imagemCarros.length; i = i + 1){
+  for(let i = 0; i < imagemCarros.length; i++){
   image(imagemCarros[i], xCars[i], yCars[i], compriCarro, alturaCarro);
  }
 }
 
 function movCar(){
-  for (let i = 0; i < imagemCarros.length; i = i + 1)
+  for (let i = 0; i < imagemCarros.length; i++)
   {
   xCars[i] -= velCars[i];
   }
 }
 
 function respawnCar(){
-  for (let i = 0; i < imagemCarros.length; i = i+1){
+  for (let i = 0; i < imagemCarros.length; i++){
       if(borderPass(xCars[i])){
         xCars[i] = 600;
       }
